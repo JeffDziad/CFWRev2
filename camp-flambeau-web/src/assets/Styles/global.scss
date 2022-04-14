@@ -1,0 +1,19 @@
+$header-grad-corner-radius: 15px;
+.red-grad {
+  background: rgb(146,0,0);
+  background: linear-gradient(90deg, rgba(146,0,0,1) 0%, rgba(255,255,255,0) 89%, rgba(0,212,255,0) 100%);
+  border-top-left-radius: $header-grad-corner-radius;
+  border-bottom-left-radius: $header-grad-corner-radius;
+}
+.orange-grad {
+  background: rgb(241,113,5);
+  background: linear-gradient(90deg, rgba(241,113,5,1) 0%, rgba(255,255,255,0) 89%, rgba(0,212,255,0) 100%);
+  border-top-left-radius: $header-grad-corner-radius;
+  border-bottom-left-radius: $header-grad-corner-radius;
+}
+.yellow-grad {
+  background: rgb(230,194,41);
+  background: linear-gradient(90deg, rgba(230,194,41,1) 0%, rgba(255,255,255,0) 89%, rgba(0,212,255,0) 100%);
+  border-top-left-radius: $header-grad-corner-radius;
+  border-bottom-left-radius: $header-grad-corner-radius;
+}
