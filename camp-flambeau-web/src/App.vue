@@ -24,10 +24,9 @@
 
 import NavigationDesktop from "@/components/NavigationDesktop";
 import NavigationMobile from "@/components/NavigationMobile";
-import NotificationBar from "@/components/NotificationBar";
 export default {
   name: 'App',
-  components: {NotificationBar, NavigationMobile, NavigationDesktop},
+  components: {NavigationMobile, NavigationDesktop},
   data: () => ({
     bg_poster: require('./assets/bg_poster.png'),
     bg_video: require('./assets/bg_video.mp4'),
