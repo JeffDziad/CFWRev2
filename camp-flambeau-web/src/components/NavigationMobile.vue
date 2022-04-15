@@ -1,94 +1,119 @@
 <template>
   <div id="header">
-    <v-btn icon x-large style="position: absolute; z-index: 2" @click="nav_drawer = !nav_drawer"><v-icon>mdi-menu</v-icon></v-btn>
-    <transition mode="in-out" enter-active-class="animate__animated animate__fadeInDown" leave-active-class="animate__animated animate__fadeOutUp">
+    <v-btn icon x-large style="position: absolute; z-index: 10" @click="nav_drawer = !nav_drawer">
+      <v-icon>mdi-menu</v-icon>
+    </v-btn>
+    <transition mode="in-out" enter-active-class="animate__animated animate__fadeInDown"
+                leave-active-class="animate__animated animate__fadeOutUp">
       <div v-show="nav_drawer" id="nav_menu">
-        <v-btn absolute icon x-large style="position: relative" @click="nav_drawer = !nav_drawer"><v-icon>mdi-close</v-icon></v-btn>
+        <v-btn absolute icon x-large style="position: relative" @click="nav_drawer = !nav_drawer">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
         <v-row>
           <v-col align="center">
             <v-row>
-              <v-col>
-                <v-hover v-slot="{hover}">
+              <v-hover v-slot="{hover}" style="cursor: inherit;">
+                <v-col>
+
                   <div class="d-inline">
-                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/rates" class="page_btn" @click="closeDrawer">
+                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/rates" class="page_btn"
+                           @click="closeDrawer">
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="!hover" :src="rates"></v-img>
+                        <v-img v-show="!hover" :src="rates" class="page_icon"></v-img>
                       </transition>
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="hover" :src="rates_hover"></v-img>
+                        <v-img v-show="hover" :src="rates_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <router-link to="/rates">
-                      <v-card shaped class="white--text page_label" style="border: #f17105 solid 2px !important;" color="primary" width="150" @click="closeDrawer"><span>Rates and Terms</span></v-card>
-                    </router-link>
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                            width="150">
+                      <router-link to="/rates" @click="closeDrawer" class="white--text text-decoration-none"><span>Rates and Terms</span>
+                      </router-link>
+                    </v-card>
                   </div>
 
-                </v-hover>
-              </v-col>
+
+                </v-col>
+              </v-hover>
             </v-row>
           </v-col>
           <v-col align="center">
             <v-row>
-              <v-col>
-                <v-hover v-slot="{hover}">
+              <v-hover v-slot="{hover}" style="cursor: inherit;">
+                <v-col>
+
                   <div class="d-inline">
-                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/cottages" class="page_btn" @click="closeDrawer">
+                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/cottages" class="page_btn"
+                           @click="closeDrawer">
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="!hover" :src="cottages"></v-img>
+                        <v-img v-show="!hover" :src="cottages" class="page_icon"></v-img>
                       </transition>
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="hover" :src="cottages_hover"></v-img>
+                        <v-img v-show="hover" :src="cottages_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <router-link to="/cottages">
-                      <v-card shaped class="white--text page_label" style="border: #f17105 solid 2px !important;" color="primary" width="150" @click="closeDrawer"><span>Cottages</span></v-card>
-                    </router-link>
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                            width="150">
+                      <router-link to="/cottages" @click="closeDrawer" class="white--text text-decoration-none"><span>Cottages</span>
+                      </router-link>
+                    </v-card>
                   </div>
 
-                </v-hover>
-              </v-col>
+
+                </v-col>
+              </v-hover>
             </v-row>
           </v-col>
           <v-col align="center">
             <v-row>
-              <v-col>
-                <v-hover v-slot="{hover}">
+              <v-hover v-slot="{hover}" style="cursor: inherit;">
+                <v-col>
+
                   <div class="d-inline">
-                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/contact" class="page_btn" @click="closeDrawer">
+                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/contact" class="page_btn"
+                           @click="closeDrawer">
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="!hover" :src="contact"></v-img>
+                        <v-img v-show="!hover" :src="contact" class="page_icon"></v-img>
                       </transition>
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="hover" :src="contact_hover"></v-img>
+                        <v-img v-show="hover" :src="contact_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <router-link to="/contact">
-                      <v-card shaped class="white--text page_label" style="border: #f17105 solid 2px !important;" color="primary" width="150" @click="closeDrawer"><span>Contact Us!</span></v-card>
-                    </router-link>
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                            width="150">
+                      <router-link to="/contact" @click="closeDrawer" class="white--text text-decoration-none"><span>Contact Us!</span>
+                      </router-link>
+                    </v-card>
                   </div>
-                </v-hover>
-              </v-col>
+
+                </v-col>
+              </v-hover>
             </v-row>
           </v-col>
           <v-col align="center">
             <v-row>
-              <v-col>
-                <v-hover v-slot="{hover}">
+              <v-hover v-slot="{hover}" style="cursor: inherit;">
+                <v-col>
+
                   <div class="d-inline">
-                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/activities" class="page_btn" @click="closeDrawer">
+                    <v-btn rounded outlined :width="nav_btn_size" :height="nav_btn_size" to="/activities"
+                           class="page_btn" @click="closeDrawer">
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="!hover" :src="activities"></v-img>
+                        <v-img v-show="!hover" :src="activities" class="page_icon"></v-img>
                       </transition>
                       <transition mode="in-out" enter-active-class="animate__animated animate__fadeIn">
-                        <v-img v-show="hover" :src="activities_hover"></v-img>
+                        <v-img v-show="hover" :src="activities_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <router-link to="/activities">
-                      <v-card shaped class="white--text page_label" style="border: #f17105 solid 2px !important;" color="primary" width="150" @click="closeDrawer"><span>Activities</span></v-card>
-                    </router-link>
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                            width="150">
+                      <router-link to="/activities" @click="closeDrawer" class="white--text text-decoration-none"><span>Activities</span>
+                      </router-link>
+                    </v-card>
                   </div>
-                </v-hover>
-              </v-col>
+
+                </v-col>
+              </v-hover>
             </v-row>
           </v-col>
         </v-row>
@@ -98,7 +123,8 @@
       <v-row justify="center">
         <v-col ref="logo_col" align="center" style="position: relative; margin-top: 200px; transition: all 2s;">
           <logo @logo_clicked="logo_click"></logo>
-          <transition enter-active-class="animate__animated animate__zoomInUp" leave-active-class="animate__animated animate__zoomOut">
+          <transition enter-active-class="animate__animated animate__zoomInUp"
+                      leave-active-class="animate__animated animate__zoomOut">
             <div ref="subtitle" v-show="atHome">
               <logo-subtitle :enable_svg="false"></logo-subtitle>
             </div>
@@ -113,6 +139,7 @@
 <script>
 import Logo from "@/components/Logo";
 import LogoSubtitle from "@/components/LogoSubtitle";
+
 export default {
   name: "NavigationMobile",
   components: {
@@ -150,7 +177,7 @@ export default {
       this.atHome = false;
     },
     checkForHome() {
-      if(this.$router.currentRoute.name.toUpperCase() === 'HOME') {
+      if (this.$router.currentRoute.name.toUpperCase() === 'HOME') {
         this.logo_click();
       } else {
         this.page_click();
@@ -161,7 +188,7 @@ export default {
     this.checkForHome();
   },
   watch: {
-    resized: function() {
+    resized: function () {
       this.checkForHome();
     }
   },
@@ -173,12 +200,12 @@ export default {
   padding: 10px;
   position: absolute;
   width: 100%;
-  background-color: rgba(136,136,136,0.2);
+  background-color: rgba(136, 136, 136, 0.2);
   backdrop-filter: blur(30px);
-  z-index: 5;
-  box-shadow: 0px 10px 77px 4px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 10px 77px 4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 77px 4px rgba(0,0,0,0.75);
+  z-index: 10;
+  box-shadow: 0px 10px 77px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 77px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 77px 4px rgba(0, 0, 0, 0.75);
 }
 
 .page_label {
