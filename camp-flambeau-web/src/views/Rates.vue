@@ -17,12 +17,12 @@
               <v-col><p class="mt-3 text-h3 text-left orange-grad white--text">&nbsp;Loyola Links:</p></v-col>
               <v-row class="ma-5 mt-0">
                 <v-col cols="12" md="6" sm="12" align="right">
-                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center vrbo_logo" @click="redirect('https://www.vrbo.com/2137295?noDates=true&unitId=2701831')">
+                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center vrbo_logo" @click="redirect('https://www.vrbo.com/2304851?noDates=true&unitId=2870995')">
                     <v-img :src="vrbo_logo"></v-img>
                   </v-card>
                 </v-col>
                 <v-col cols="12" md="6" sm="12">
-                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center" @click="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-camp-flambeau-g86lvzqxz4')">
+                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center" @click="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-fence-lake-cottage-ebxpjerxw9')">
                     <v-img :src="rwc_bg" style="position: absolute; z-index: 0; width: 100%; height: 100%;"></v-img>
                     <v-img :src="rwc_logo" style="position: relative; z-index: 0;"></v-img>
                   </v-card>
@@ -35,12 +35,12 @@
               <v-col><p class="mt-3 text-h3 text-left orange-grad white--text">&nbsp;Marquette Links:</p></v-col>
               <v-row class="ma-5 mt-0">
                 <v-col cols="12" md="6" sm="12" align="right">
-                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center vrbo_logo" @click="redirect('https://www.vrbo.com/2304851?noDates=true&unitId=2870995')">
+                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center vrbo_logo" @click="redirect('https://www.vrbo.com/2137295?noDates=true&unitId=2701831')">
                     <v-img :src="vrbo_logo"></v-img>
                   </v-card>
                 </v-col>
                 <v-col cols="12" md="6" sm="12">
-                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center" @click="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-fence-lake-cottage-ebxpjerxw9')">
+                  <v-card elevation="10" min-height="300" class="link_card d-flex align-center" @click="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-camp-flambeau-g86lvzqxz4')">
                     <v-img :src="rwc_bg" style="position: absolute; z-index: 0; width: 100%; height: 100%;"></v-img>
                     <v-img :src="rwc_logo" style="position: relative; z-index: 0;"></v-img>
                   </v-card>
@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     redirect(url) {
-      window.open(url, '_blank')
+      window.open(url, '_blank');
     }
   }
 }

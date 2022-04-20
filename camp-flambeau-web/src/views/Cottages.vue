@@ -31,22 +31,38 @@
               </v-carousel-item>
             </v-carousel>
             <v-container class="pa-5">
+
+              <v-row class="ma-5 mt-0">
+                <v-col cols="12" md="6" sm="12" align="right">
+                  <v-card elevation="0" min-height="100" max-height="100" class="link_card d-flex align-center">
+                    <v-img :src="vrbo_logo" min-height="100" max-height="100" contain @click.prevent.stop="redirect('https://www.vrbo.com/2304851?noDates=true&unitId=2870995')"></v-img>
+                  </v-card>
+                </v-col>
+                <v-col cols="12" md="6" sm="12">
+                  <v-card elevation="0" min-height="100" max-height="100" class="link_card d-flex align-center">
+                    <v-img :src="rwc_logo" min-height="100" max-height="100" contain @click.prevent.stop="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-fence-lake-cottage-ebxpjerxw9')"></v-img>
+                  </v-card>
+                </v-col>
+              </v-row>
+
               <v-col><p class="text-h3 text-left red-grad white--text">&nbsp;Description</p></v-col>
-              <p class="text-left indent">
-                Enjoy our rustic, cozy, and clean, 3 season Northwoods cottage with 2 Bedrooms, (1 Queens, 1 Twin/Full Bunkbed and trundle bed, sleeps 6). Dine on the full wrap-around deck with shaded patio furniture.  Prepare your favorite meals in your beautiful, fully equipped kitchen with dishwasher and an ice maker/filtered water refrigerator.  For the chilly nights, enjoy your free standing wood pellet fireplace in living room for added romance!  Gather around the private fire pit ( with free wood), with lawn chairs. As an added bonus, enjoy free streaming TV and high-speed Wi-Fi internet!
-              </p>
-              <p class="text-left indent">
-                Gather with friends or family to enjoy the fun and refreshing gin clear waters of Fence Lake!  Relish great boating and fishing on this full REC lake, explore connected lakes on the ten lake chain, do some eagle watching, bike or ATV on one of the nearby trails, play tennis or shoot hoops on the private court, or just sit and relax (indoors or out) to enjoy the beautiful view.   Memories are made here!
-              </p>
-              <p class="text-left indent">
-                Cap off your day with your favorite beverage as you lounge to watch the spectacular sunset!   When you're tuckered out from all the fun and fresh lake air, retreat to this rustic, cozy, and newly remodeled north woods cottage.
-              </p>
-              <p class="text-left indent">
-                Enjoy cooking out on the full patio with table, charcoal grill, with free charcoal.  Minocqua, Woodruff and Lac du Flambeau are all within 10 minute drive if you prefer to dine out or carry in.  Try one of Wisconsin's famous supper clubs in the area.
-              </p>
-              <p class="text-left">
-                Guests will enjoy a private pier to dock your personal watercraft!
-              </p>
+              <div class="mx-5">
+                <p class="text-left indent">
+                  Enjoy our rustic, cozy, and clean, 3 season Northwoods cottage with 2 Bedrooms, (1 Queens, 1 Twin/Full Bunkbed and trundle bed, sleeps 6). Dine on the full wrap-around deck with shaded patio furniture.  Prepare your favorite meals in your beautiful, fully equipped kitchen with dishwasher and an ice maker/filtered water refrigerator.  For the chilly nights, enjoy your free standing wood pellet fireplace in living room for added romance!  Gather around the private fire pit ( with free wood), with lawn chairs. As an added bonus, enjoy free streaming TV and high-speed Wi-Fi internet!
+                </p>
+                <p class="text-left indent">
+                  Gather with friends or family to enjoy the fun and refreshing gin clear waters of Fence Lake!  Relish great boating and fishing on this full REC lake, explore connected lakes on the ten lake chain, do some eagle watching, bike or ATV on one of the nearby trails, play tennis or shoot hoops on the private court, or just sit and relax (indoors or out) to enjoy the beautiful view.   Memories are made here!
+                </p>
+                <p class="text-left indent">
+                  Cap off your day with your favorite beverage as you lounge to watch the spectacular sunset!   When you're tuckered out from all the fun and fresh lake air, retreat to this rustic, cozy, and newly remodeled north woods cottage.
+                </p>
+                <p class="text-left indent">
+                  Enjoy cooking out on the full patio with table, charcoal grill, with free charcoal.  Minocqua, Woodruff and Lac du Flambeau are all within 10 minute drive if you prefer to dine out or carry in.  Try one of Wisconsin's famous supper clubs in the area.
+                </p>
+                <p class="text-left">
+                  Guests will enjoy a private pier to dock your personal watercraft!
+                </p>
+              </div>
               <hr>
               <br>
               <v-col><p class="text-h3 text-left orange-grad white--text">&nbsp;Amenities</p></v-col>
@@ -98,22 +114,38 @@
               </v-carousel-item>
             </v-carousel>
             <v-container class="pa-5">
+
+              <v-row class="ma-5 mt-0">
+                <v-col cols="12" md="6" sm="12" align="right">
+                  <v-card elevation="0" min-height="100" max-height="100" class="link_card d-flex align-center">
+                    <v-img :src="vrbo_logo" min-height="100" max-height="100" contain @click.prevent.stop="redirect('https://www.vrbo.com/2137295?noDates=true&unitId=2701831')"></v-img>
+                  </v-card>
+                </v-col>
+                <v-col cols="12" md="6" sm="12">
+                  <v-card elevation="0" min-height="100" max-height="100" class="link_card d-flex align-center">
+                    <v-img :src="rwc_logo" min-height="100" max-height="100" contain @click.prevent.stop="redirect('https://www.rentwisconsincabins.com/rental/camp-flambeau-camp-flambeau-g86lvzqxz4')"></v-img>
+                  </v-card>
+                </v-col>
+              </v-row>
+
               <v-col><p class="text-h3 text-left red-grad white--text">&nbsp;Description</p></v-col>
-              <p class="text-left indent">
-                Enjoy our rustic, cozy, and clean, 4 season Northwoods cottage with 2 Bedrooms, (1 Queens, 1 Twin/Full Bunkbed and sleeper sofa, sleeps 6). Dine in on a 6-chair dining set or a 4-chair snack bar, or outdoors on your own patio with octagonal picnic table.  Prepare your favorite meals in your beautiful, fully equipped kitchen with dishwasher and an ice maker/filtered water refrigerator.  Gather around the private fire pit (with free wood), with lawn chairs. As an added bonus, enjoy free streaming TV and high-speed Wi-Fi internet!
-              </p>
-              <p class="text-left indent">
-                Gather with friends or family to enjoy the fun and refreshing gin clear waters of Fence Lake!  Relish great boating and fishing on this full REC lake, explore connected lakes on the ten lake chain, do some eagle watching, bike or ATV on one of the nearby trails, play tennis or shoot hoops on the private court, or just sit and relax (indoors or out) to enjoy the beautiful view.   Memories are made here!
-              </p>
-              <p class="text-left indent">
-                Cap off your day with your favorite beverage as you lounge to watch the spectacular sunset!   When you're tuckered out from all the fun and fresh lake air, retreat to this rustic, cozy, and newly remodeled north woods cottage.
-              </p>
-              <p class="text-left indent">
-                Enjoy cooking out on the full patio with table, gas grill.  Minocqua, Woodruff and Lac du Flambeau are all within 10 minute drive if you prefer to dine out or carry in.  Try one of Wisconsin's famous supper clubs in the area.
-              </p>
-              <p class="text-left">
-                Guests will enjoy a private pier to dock your personal watercraft
-              </p>
+              <div class="mx-5">
+                <p class="text-left indent">
+                  Enjoy our rustic, cozy, and clean, 4 season Northwoods cottage with 2 Bedrooms, (1 Queens, 1 Twin/Full Bunkbed and sleeper sofa, sleeps 6). Dine in on a 6-chair dining set or a 4-chair snack bar, or outdoors on your own patio with octagonal picnic table.  Prepare your favorite meals in your beautiful, fully equipped kitchen with dishwasher and an ice maker/filtered water refrigerator.  Gather around the private fire pit (with free wood), with lawn chairs. As an added bonus, enjoy free streaming TV and high-speed Wi-Fi internet!
+                </p>
+                <p class="text-left indent">
+                  Gather with friends or family to enjoy the fun and refreshing gin clear waters of Fence Lake!  Relish great boating and fishing on this full REC lake, explore connected lakes on the ten lake chain, do some eagle watching, bike or ATV on one of the nearby trails, play tennis or shoot hoops on the private court, or just sit and relax (indoors or out) to enjoy the beautiful view.   Memories are made here!
+                </p>
+                <p class="text-left indent">
+                  Cap off your day with your favorite beverage as you lounge to watch the spectacular sunset!   When you're tuckered out from all the fun and fresh lake air, retreat to this rustic, cozy, and newly remodeled north woods cottage.
+                </p>
+                <p class="text-left indent">
+                  Enjoy cooking out on the full patio with table, gas grill.  Minocqua, Woodruff and Lac du Flambeau are all within 10 minute drive if you prefer to dine out or carry in.  Try one of Wisconsin's famous supper clubs in the area.
+                </p>
+                <p class="text-left">
+                  Guests will enjoy a private pier to dock your personal watercraft
+                </p>
+              </div>
               <hr>
               <br>
               <v-col><p class="text-h3 text-left orange-grad white--text">&nbsp;Amenities</p></v-col>
@@ -191,6 +223,8 @@ export default {
   name: "Cottages",
   data: function() {
     return {
+      vrbo_logo: require('./../assets/Rates/vrbo_tspt.png'),
+      rwc_logo: require('./../assets/Rates/rwc.png'),
       loyolaViewer: false,
       marquetteViewer: false,
       sharedViewer: false,
@@ -276,13 +310,41 @@ export default {
     },
     sharedLargeViewer() {
       this.sharedViewer = true;
+    },
+    redirect(url) {
+      window.open(url, '_blank');
     }
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .indent {
   text-indent: 50px;
 }
+
+.link_card {
+  animation-duration: 1s;
+  cursor: pointer;
+}
+
+.link_card:hover {
+  animation-name: floater;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 </style>
