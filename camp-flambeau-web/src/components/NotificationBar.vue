@@ -2,7 +2,7 @@
   <v-snackbar v-model="notification_bar">
     {{notification_msg}}
     <template v-slot:action="{attrs}">
-      <v-btn color="red" class="white--text" text v-bind="attrs" @click="notification_bar = false"></v-btn>
+      <v-btn color="red" class="white--text" text v-bind="attrs" @click="notification_bar = false">Close</v-btn>
     </template>
   </v-snackbar>
 </template>

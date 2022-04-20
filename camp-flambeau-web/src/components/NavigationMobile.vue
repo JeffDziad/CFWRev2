@@ -25,9 +25,9 @@
                         <v-img v-show="hover" :src="rates_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary" @click="closeDrawer"
                             width="150">
-                      <router-link to="/rates" @click="closeDrawer" class="white--text text-decoration-none"><span>Rates and Terms</span>
+                      <router-link to="/rates" class="white--text text-decoration-none"><span>Rates and Terms</span>
                       </router-link>
                     </v-card>
                   </div>
@@ -52,9 +52,9 @@
                         <v-img v-show="hover" :src="cottages_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary" @click="closeDrawer"
                             width="150">
-                      <router-link to="/cottages" @click="closeDrawer" class="white--text text-decoration-none"><span>Cottages</span>
+                      <router-link to="/cottages"  class="white--text text-decoration-none"><span>Cottages</span>
                       </router-link>
                     </v-card>
                   </div>
@@ -79,9 +79,9 @@
                         <v-img v-show="hover" :src="contact_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary" @click="closeDrawer"
                             width="150">
-                      <router-link to="/contact" @click="closeDrawer" class="white--text text-decoration-none"><span>Contact Us!</span>
+                      <router-link to="/contact" class="white--text text-decoration-none"><span>Contact Us!</span>
                       </router-link>
                     </v-card>
                   </div>
@@ -105,9 +105,9 @@
                         <v-img v-show="hover" :src="activities_hover" class="page_icon-hover"></v-img>
                       </transition>
                     </v-btn>
-                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary"
+                    <v-card shaped class="mt-3" style="border: #f17105 solid 2px !important;" color="primary" @click="closeDrawer"
                             width="150">
-                      <router-link to="/activities" @click="closeDrawer" class="white--text text-decoration-none"><span>Activities</span>
+                      <router-link to="/activities" class="white--text text-decoration-none"><span>Activities</span>
                       </router-link>
                     </v-card>
                   </div>
