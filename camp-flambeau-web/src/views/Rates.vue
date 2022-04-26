@@ -4,13 +4,13 @@
       <v-col align="center">
         <v-card max-width="1100" elevation="10">
           <v-toolbar color="primary" flat dark>
-            <v-toolbar-title>VRBO Calendar</v-toolbar-title>
+            <v-toolbar-title class="text-h3">Booking Calendar</v-toolbar-title>
             <v-spacer></v-spacer>
             <span class="float-right" style="font-size: 12px;">(updated every 2 hours)</span>
           </v-toolbar>
-          <v-tabs centered grow active-class="tab_active">
-            <v-tab class="tab_btn">Loyola</v-tab>
-            <v-tab class="tab_btn">Marquette</v-tab>
+          <v-tabs centered grow active-class="tabs-active" color="secondary">
+            <v-tab class="tab-btn">Loyola</v-tab>
+            <v-tab class="tab-btn">Marquette</v-tab>
             <v-tab-item>
               <!-- Loyola -->
               <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&title&showTitle=0&showCalendars=1&src=MGoyNzFhMmg1ZXRvdm9rN2Q3YmNsbmgxMWFiamMyMm9AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA" style="width: 100%;" height="700" frameborder="0" scrolling="no" class="pt-1"></iframe>
@@ -74,14 +74,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.tab_btn {
-  border-bottom: solid black 2px;
-}
-.tab_active {
-  background-color: rgba(146,0,0, 0.1);
-  border-bottom: none;
-}
-
 .vrbo_logo {
   background-color: #0E214B;
 }

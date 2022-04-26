@@ -32,3 +32,14 @@ $header-grad-corner-radius: 15px;
   width: 75px;
   height: 75px;
 }
+
+.tabs-active {
+  background-color: white !important;
+}
+
+.tab-btn {
+  font-weight: bold;
+  font-size: 1.25em;
+  border-bottom: black 2px solid;
+  background-color: rgba(182, 182, 182, 0.42);
+}

@@ -6,7 +6,7 @@
         <navigation-mobile :resized="resized" v-show="mobile_mode"></navigation-mobile>
         <br>
         <br>
-        <transition  mode="out-in" enter-active-class="animate__animated animate__slideInRight" leave-active-class="animate__animated animate__slideOutLeft">
+        <transition mode="out-in" enter-active-class="animate__animated animate__slideInRight" leave-active-class="animate__animated animate__slideOutLeft">
           <router-view/>
         </transition>
       </div>
@@ -16,6 +16,7 @@
       <video v-show="mobile_mode" class="bg_video" style="object-fit: cover;" autoplay="autoplay" loop muted playsinline preload :poster="bg_poster">
         <source type="video/mp4" :src="bg_video">
       </video>
+      <scrollbar v-show="!mobile_mode"></scrollbar>
     </v-main>
   </v-app>
 </template>
@@ -24,9 +25,10 @@
 
 import NavigationDesktop from "@/components/NavigationDesktop";
 import NavigationMobile from "@/components/NavigationMobile";
+import Scrollbar from "@/components/util/Scrollbar";
 export default {
   name: 'App',
-  components: {NavigationMobile, NavigationDesktop},
+  components: {Scrollbar, NavigationMobile, NavigationDesktop},
   data: () => ({
     bg_poster: require('./assets/bg_poster.png'),
     bg_video: require('./assets/bg_video.mp4'),
